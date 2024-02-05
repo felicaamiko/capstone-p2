@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0r6v45q7bd4s"]
+
+[ext_resource type="PackedScene" uid="uid://bh8o0hmkm6r42" path="res://rigid_body_2d.tscn" id="1_qjk2o"]
+[ext_resource type="PackedScene" uid="uid://bx677cppku7ab" path="res://static_body_2d.tscn" id="2_tmxee"]
+
+[node name="arena" type="Node2D"]
+
+[node name="RigidBody2D" parent="." instance=ExtResource("1_qjk2o")]
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("1_qjk2o")]
+position = Vector2(657, 117)
+
+[node name="RigidBody2D3" parent="." instance=ExtResource("1_qjk2o")]
+position = Vector2(748, 315)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_tmxee")]

@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://76lbb01jrvbd"]
+[gd_scene load_steps=5 format=3 uid="uid://76lbb01jrvbd"]
 
 [ext_resource type="Texture2D" uid="uid://dtvxjie66u66g" path="res://icon.svg" id="1_c2g0h"]
-[ext_resource type="Script" path="res://RigidBody2D2.gd" id="2_r14s5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_radv3"]
 size = Vector2(128, 128)
@@ -26,7 +25,6 @@ texture = ExtResource("1_c2g0h")
 [node name="RigidBody2D2" type="RigidBody2D" parent="."]
 position = Vector2(537, 452)
 gravity_scale = -1.0
-script = ExtResource("2_r14s5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
 shape = SubResource("RectangleShape2D_radv3")

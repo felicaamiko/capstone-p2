@@ -13,7 +13,7 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	#if Input.is_action_just_pressed("click"):
 		#mouseoffset = position - get_global_mouse_position()
 	prevmousepos = mousepos
@@ -28,11 +28,14 @@ func _process(delta):
 		position = get_global_mouse_position() + mouseoffset
 		prevmousepos = get_global_mouse_position()
 	else:
-		linear_velocity = lastvector
-		#if (not firstframe):
+		if (not firstframe):
+			linear_velocity = lastvector
 			#lastvectorcopy = lastvector
 			#position += lastvectorcopy
-			#firstframe = true
+			#position += lastvectorcopy #changing to a - makes cool slingshot effect.
+			lastvectorcopy *= .5
+			if (lastvectorcopy == Vector2(0,0)):
+				firstframe = true
 		#lastvectorcopy *= .75
 		#position += lastvectorcopy #changing to a - makes cool slingshot effect.
 		#print_debug(lastvectorcopy)

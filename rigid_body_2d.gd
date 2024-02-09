@@ -15,10 +15,10 @@ func _physics_process(delta):
 	prevmousepos = mousepos
 	mousepos = get_global_mouse_position()
 	lastvector = (mousepos-prevmousepos)
-	
+	print_debug(lastvector)
 	
 	if (isHovered and Input.is_action_pressed("click")):#held down
-		apply_impulse(position, lastvector)
+		apply_impulse(lastvector, position)
 		#if (firstframe):
 			#mouseoffset = position - get_global_mouse_position()
 			#firstframe = false

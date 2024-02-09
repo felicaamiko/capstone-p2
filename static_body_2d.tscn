@@ -1,10 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bx677cppku7ab"]
+[gd_scene load_steps=5 format=3 uid="uid://bx677cppku7ab"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_odigm"]
 size = Vector2(1152, 442)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w855y"]
 size = Vector2(1152, 268)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fkuak"]
+size = Vector2(429, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c4r5r"]
+size = Vector2(586, 648)
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
@@ -15,3 +21,11 @@ shape = SubResource("RectangleShape2D_odigm")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2(576, -134)
 shape = SubResource("RectangleShape2D_w855y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2(1366.5, 324)
+shape = SubResource("RectangleShape2D_fkuak")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="."]
+position = Vector2(-293, 324)
+shape = SubResource("RectangleShape2D_c4r5r")

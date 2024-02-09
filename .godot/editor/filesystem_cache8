@@ -1,8 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707167433
+::res://::1707496394
+arena2.tscn::PackedScene::4178157495201750016::1707428306::0::1::::<><>::uid://bh8o0hmkm6r42::::res://rigid_body_2d.tscn<>uid://bx677cppku7ab::::res://static_body_2d.tscn
+arena.tscn::PackedScene::2310708471844726417::1707428305::0::1::::<><>::uid://dtvxjie66u66g::::res://icon.svg
+collision_shape_2d.tscn::PackedScene::7048683547328617935::1707167718::0::1::::<><>::
 icon.svg::CompressedTexture2D::8537615003832712848::1707147451::1707147455::1::::<><>::
 LICENSE.md::TextFile::-1::1707147518::0::1::::<><>::
 README.md::TextFile::-1::1707147518::0::1::::<><>::
-arena.tscn::PackedScene::2310708471844726417::1707167433::0::1::::<><>::uid://dtvxjie66u66g::::res://icon.svg
-arena2.tscn::PackedScene::4178157495201750016::1707167465::0::1::::<><>::uid://dtvxjie66u66g::::res://icon.svg
 RigidBody2D2.gd::GDScript::-1::1707147994::0::1::::<>RigidBody2D<>::
+rigid_body_2d.gd::GDScript::-1::1707195021::0::1::::<>RigidBody2D<>::
+rigid_body_2d.tscn::PackedScene::2946762124462386609::1707428306::0::1::::<><>::res://rigid_body_2d.gd<>uid://dtvxjie66u66g::::res://icon.svg<>uid://c7oo12fmvniqx::::res://collision_shape_2d.tscn
+static_body_2d.tscn::PackedScene::4066760015831666785::1707428306::0::1::::<><>::

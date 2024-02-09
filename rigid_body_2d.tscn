@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dtvxjie66u66g" path="res://icon.svg" id="1_wf7ow"]
 [ext_resource type="PackedScene" uid="uid://c7oo12fmvniqx" path="res://collision_shape_2d.tscn" id="2_jvume"]
 
-[node name="RigidBody2D" type="RigidBody2D"]
+[node name="block" type="RigidBody2D"]
 position = Vector2(593, 273)
 gravity_scale = 0.0
 script = ExtResource("1_qdtal")

@@ -6,7 +6,6 @@
 
 [node name="block" type="RigidBody2D"]
 position = Vector2(593, 273)
-gravity_scale = 0.0
 script = ExtResource("1_qdtal")
 
 [node name="CollisionShape2D" parent="." instance=ExtResource("2_jvume")]

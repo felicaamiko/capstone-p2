@@ -8,10 +8,9 @@
 [node name="RigidBody2D" parent="." instance=ExtResource("1_qjk2o")]
 
 [node name="RigidBody2D2" parent="." instance=ExtResource("1_qjk2o")]
-position = Vector2(657, 117)
-mass = 10.0
+mass = 0.01
 
 [node name="RigidBody2D3" parent="." instance=ExtResource("1_qjk2o")]
-position = Vector2(748, 315)
+can_sleep = false
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_tmxee")]

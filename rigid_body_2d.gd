@@ -28,10 +28,11 @@ func _physics_process(delta):
 	prevmousepos = mousepos
 	mousepos = get_global_mouse_position()
 	lastvector = (mousepos-prevmousepos)
-	print_debug(lastvector.x)
+	#print_debug(lastvector.x)
 	sqrtsenslastvector = Vector2(sqrt(abs(lastvector.x)) * horizdir, sqrt(abs(lastvector.y)) * vertdir) * sensitivity
 	if (isHovered and Input.is_action_pressed("click") and firstframe == true):#held down first frame
 		apply_force(sqrtsenslastvector, Vector2(0,0))
+		print_debug(transform.get_rotation())#rotation is in radians
 		#apply_impulse(lastvector, position)
 		untilsixty += 1
 		#if (untilsixty > 60):
